@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Us</title>
+    <link rel="stylesheet" href="RegisterUs_style.css">
+</head>
+
+<body>
+    <header>
+        <a href="Home.html">
+            <img src="./Assets/Home/Hi-ToyzLogo.png" class="logoHeader" alt="Hi-ToyzLogo" />
+        </a>
+    </header>
+    <nav>
+        <ul class="navBar">
+            <li><a class="default" href="Home.html">Home</a></li>
+            <li><a class="default" href="Products.html">Products</a></li>
+            <li><a class="default" href="Gallery.html">Gallery</a></li>
+            <li><a class="default" href="Events.html">Events</a></li>
+            <li><a class="active" href="RegisterUs.html">Register Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="registerUs">
+        <h1>Register Us</h1>
+
+        <form class="formList" onsubmit="return registerValidation();">
+            <label class="formLabel" for="name">Name</label>
+            <input name="name" id="name" type="text" class="infoForm" required="">
+
+            <label class="formLabel" for="date">Date of Birth</label>
+            <input name="date" id="date" type="date" class="infoForm" required="">
+
+            <label class="formLabel" for="phone">Phone</label>
+            <input name="phone" id="phone" type="number" class="infoForm" required="">
+
+            <label class="formLabel" for="email">Email</label>
+            <input name="email" id="email" type="email" class="infoForm" required="">
+
+            <label class="formLabel" for="Password">Password</label>
+            <input name="Password" id="password" type="password" class="infoForm" required="">
+
+            <label class="formLabel" for="rePassword">Re-enter Password</label>
+            <input name="rePassword" id="rePassword" type="password" class="infoForm" required="">
+
+            <label class="formLabel"></label>
+            <label class="checkBoxForm">
+                <input type="checkbox" id="agreement">
+                <div class="checkMarkForm"></div>
+                I agree to the terms & regulations
+            </label>
+
+            <label class="formLabel"></label>
+            <div class="buttonsList">
+                <button id="reset" type="reset" class="resetButton">Reset</button>
+                <button id="register" type="submit" class="regButton">Register</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footerSect">
+        <div class="footer">
+            <div class="logoFooter">
+                <a href="Home.html"><img src="Assets/Home/logofooter.png" alt="Hi-ToyzLogo" /></a>
+            </div>
+            <div class="footerCont">
+                <div class="newsCont">
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                    </div>
+                    <p>
+                        Be the first to get updated on our latest products and receive
+                        special offers!
+                    </p>
+                    <form class="newsForm" action="#" method="post">
+                        <div class="inputForm">
+                            <input type="email" name="email" placeholder="YOUR EMAIL ADDRESS" required />
+                            <img src="Assets/Home/SVG/arrow.svg" alt="Submit" class="arrowSubmit" />
+                        </div>
+                    </form>
+                </div>
+                <div class="infoCont">
+                    <div class="information">
+                        <h4>Information</h4>
+                    </div>
+                    <ul class="infoList">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                    </ul>
+                </div>
+                <div class="socMedCont">
+                    <div class="socialMed">
+                        <h4>Social Media</h4>
+                    </div>
+                    <div class="socialMedIcons">
+                        <a href="#"><img src="Assets/Home/SVG/facebook.svg" alt="Facebook" /></a>
+                        <a href="#"><img src="Assets/Home/SVG/twitter.svg" alt="Twitter" /></a>
+                        <a href="#"><img src="Assets/Home/SVG/instagram.svg" alt="Instagram" /></a>
+                        <a href="#"><img src="Assets/Home/SVG/youtub.svg" alt="Youtube" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trademark">
+            <p>©2023, HI-TOYZ • ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+
+    <script src="./RegisterUs_Js.js"></script>
+</body>
+
+</html>

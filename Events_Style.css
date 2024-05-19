@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Jost:wght@100;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Jost:wght@100;400;500;600;700&family=Mitr:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  /* background-color:antiquewhite; */
+}
+
+header {
+  background-color: #383a49;
+  padding: 1.5% 0;
+}
+
+.logoHeader {
+  margin: 0% 7%;
+  width: 30%;
+  height: auto;
+}
+
+nav {
+  background-color: #ffffff;
+  filter: drop-shadow(0rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.35));
+  position: sticky;
+  z-index: 5;
+  top: 0;
+}
+
+.navBar {
+  margin: 0 4.5%;
+  list-style-type: none;
+  padding: 0.8% 0;
+}
+
+.navBar li {
+  display: inline;
+}
+
+.navBar a {
+  font-family: "Jost", sans-serif;
+  font-size: 1.875rem;
+  text-decoration: none;
+  color: #383a49;
+  padding: 0rem 2.5rem;
+}
+
+.navBar a:hover {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.active {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.default {
+  font-weight: 450;
+}
+
+.activities {
+  margin: 3.4% 7.7%;
+  text-align: justify;
+}
+
+.activitiesCont {
+  display: flex;
+}
+
+.activities h1 {
+  font-family: "Jost", sans-serif;
+  font-size: 3.5rem;
+  color: #383a49;
+  font-weight: 700;
+}
+
+.activities p {
+  font-family: "Jost", sans-serif;
+  font-size: 1.875rem;
+  color: #383a49;
+  font-weight: 500;
+}
+
+.activitiesDet {
+  font-family: "Jost", sans-serif;
+  font-size: 2rem;
+  color: #383a49;
+  font-weight: 500;
+
+  display: flex;
+  margin: 2.25% 0%;
+  justify-content: space-between;
+}
+
+.cont1{
+  display: flex;
+  gap: 2.5%;
+}
+
+.cont1 p{
+  text-align: justify;
+  line-height: 2.5rem;
+}
+
+.cont2{
+  margin-top: 2%;
+}
+
+.imgCont {
+  position: relative;
+  display: inline-block;
+}
+
+.hovered {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.imgCont:hover .hovered {
+  opacity: 1;
+}
+
+.promotions h1{
+  font-family: "Jost", sans-serif;
+  font-size: 3.5rem;
+  color: #383a49;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.promotions {
+  margin: 4% 7.7%;
+  text-align: justify;
+}
+
+.birthday{
+  font-family: "Jost", sans-serif;
+  font-size: 1.8rem;
+  color: #383a49;
+  font-weight: 500;
+  margin-bottom: 5%;
+
+  display: flex;
+  text-align: justify;
+  gap: 3%;
+}
+
+.clearance{
+  font-family: "Jost", sans-serif;
+  font-size: 1.8rem;
+  color: #383a49;
+  font-weight: 500;
+  margin-bottom: 8%;
+
+  display: flex;
+  text-align: justify;
+  gap: 3%;
+}
+
+.footerSect{
+  background-color: #383a49;
+  color: #F8F8F8;
+  padding: 2rem 0;
+}
+
+.footer {
+  margin: 2% 10%;
+  justify-content: space-between;
+}
+
+.logoFooter{
+  margin: 0 -0.5rem;
+}
+
+.footerCont{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.information,
+.socialMed,
+.newsletter {
+  font-family: "Jost", sans-serif;
+  font-size: 1.5625rem;
+  font-weight: 600;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.infoList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.infoList li {
+  margin-bottom: 1rem;
+}
+
+.infoList li a {
+  color: #F8F8F8;
+  font-family: "Jost", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+}
+
+.socialMedIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20%;
+}
+
+.socialMedIcons img {
+  width: 2rem;
+}
+
+.newsCont{
+  width: 25%;
+}
+
+.newsCont p {
+  font-family: "Jost", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.newsForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsForm .inputForm {
+  position: relative;
+  flex: 1;
+}
+
+.newsForm input {
+  border-radius: 2rem;
+  padding: 0.5rem;
+  width: 90%;
+  background-color: #F8F8F8;
+  border-style: none;
+}
+
+
+.newsForm .arrowSubmit {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.trademark {
+  font-family: "Jost", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px){
+  .activities {
+    margin: 3.4% 7.7%;
+    text-align: justify;
+  }
+  
+  .activitiesCont {
+    display: flex;
+  }
+  
+  .activities h1 {
+    font-family: "Jost", sans-serif;
+    font-size: 3rem;
+    color: #383a49;
+    font-weight: 700;
+  }
+  
+  .activities p {
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+    color: #383a49;
+    font-weight: 500;
+  }
+  
+  .activitiesDet {
+    font-family: "Jost", sans-serif;
+    font-size: 2.5rem;
+    color: #383a49;
+    font-weight: 500;
+  
+    display: flex;
+    margin: 2.25% 0%;
+    justify-content: space-between;
+  }
+  
+  .cont1{
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+  }
+  
+  .cont1 p{
+    text-align: justify;
+    line-height: 2rem;
+    width: 90%
+  }
+  
+  .cont2{
+    margin-top: 2%;
+  }
+
+  .cont2 p{
+    line-height: 2rem;
+  }
+  
+  .imgCont {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .imgCont img{
+    width: 100%;
+  }
+  
+  .hovered {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+  }
+  
+  .imgCont:hover .hovered {
+    opacity: 1;
+  }
+  
+  .promotions h1{
+    font-family: "Jost", sans-serif;
+    font-size: 3rem;
+    color: #383a49;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .promotions {
+    margin: 4% 7.7%;
+    text-align: justify;
+  }
+  
+  .birthday{
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+    color: #383a49;
+    font-weight: 500;
+    margin-bottom: 5%;
+  
+    display: flex;
+    text-align: justify;
+    gap: 3%;
+  }
+  
+  .clearance{
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+    color: #383a49;
+    font-weight: 500;
+    margin-bottom: 8%;
+  
+    display: flex;
+    text-align: justify;
+    gap: 3%;
+  }
+
+  .birthday img, .clearance img{
+    width: 30%;
+  }
+}

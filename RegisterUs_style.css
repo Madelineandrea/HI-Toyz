@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Jost:wght@100;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Jost:wght@100;400;500;600;700&family=Mitr:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    /* background-color:antiquewhite; */
+}
+
+header {
+    background-color: #383a49;
+    padding: 1.5% 0;
+}
+
+.logoHeader {
+    margin: 0% 7%;
+    width: 30%;
+    height: auto;
+}
+
+nav {
+    background-color: #FFFFFF;
+    filter: drop-shadow(0rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.35));
+    position: sticky;
+    z-index: 5;
+    top: 0;
+}
+
+.navBar {
+    margin: 0 4.5%;
+    list-style-type: none;
+    padding: 0.8% 0;
+
+}
+
+.navBar li {
+    display: inline;
+}
+
+.navBar a {
+    font-family: "Jost", sans-serif;
+    font-size: 1.875rem;
+    text-decoration: none;
+    color: #383a49;
+    padding: 0rem 2.5rem;
+}
+
+.navBar a:hover {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.active {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.default {
+    font-weight: 450;
+}
+
+.registerUs {
+    padding: 3.4% 7%;
+
+}
+
+.registerUs h1 {
+    font-family: "Jost", sans-serif;
+    font-size: 3.75rem;
+    color: #383a49;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.formList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formLabel {
+    width: 40%;
+    margin-right: 4%;
+    font-family: "Jost", sans-serif;
+    font-size: 2.5rem;
+    color: #383a49;
+    font-weight: 450;
+}
+
+.infoForm {
+    margin-bottom: 1rem;
+    width: 50%;
+    background-color: #E4E4E4;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+
+    font-family: "Jost", sans-serif;
+    font-size: 1.5rem;
+    color: #383a49;
+    font-weight: 450;
+}
+
+
+.checkBoxForm input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkBoxForm {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    user-select: none;
+    margin-top: 2rem;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    font-family: "Jost", sans-serif;
+    font-size: 1.5rem;
+    color: #383a49;
+    font-weight: 600;
+}
+
+.checkMarkForm {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #E4E4E4;
+    border-radius: 2px;
+    box-shadow: 3px 3px grey;
+}
+
+.checkBoxForm input:checked~.checkMarkForm {
+    background-color: #4ECB71;
+}
+
+.checkMarkForm:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkBoxForm input:checked~.checkMarkForm:after {
+    display: block;
+}
+
+.checkBoxForm .checkMarkForm:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+}
+
+.buttonsList{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 100%;
+    margin-bottom: 7.5%;
+}
+
+.resetButton, .regButton{
+    border: none;
+    padding: 5% 25%;
+    border-radius: 20px;
+    cursor: pointer;
+
+    font-family: "Jost", sans-serif;
+    font-size: 2rem;
+    color: #383a49;
+    font-weight: 600;
+}
+
+.resetButton{
+    background-color: #D9D9D9;
+}
+
+.regButton{
+    background-color: #FFD058;
+}
+
+.footerSect {
+    background-color: #383a49;
+    color: #F8F8F8;
+    padding: 2rem 0;
+}
+
+.footer {
+    margin: 2% 10%;
+    justify-content: space-between;
+}
+
+.logoFooter {
+    margin: 0 -0.5rem;
+}
+
+.footerCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.information,
+.socialMed,
+.newsletter {
+    font-family: "Jost", sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 600;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.infoList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.infoList li {
+    margin-bottom: 1rem;
+}
+
+.infoList li a {
+    color: #F8F8F8;
+    font-family: "Jost", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+}
+
+.socialMedIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+}
+
+.socialMedIcons img {
+    width: 2rem;
+}
+
+.newsCont {
+    width: 25%;
+}
+
+.newsCont p {
+    font-family: "Jost", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.newsForm {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsForm .inputForm {
+    position: relative;
+    flex: 1;
+}
+
+.newsForm input {
+    border-radius: 2rem;
+    padding: 0.5rem;
+    width: 90%;
+    background-color: #F8F8F8;
+    border-style: none;
+}
+
+
+.newsForm .arrowSubmit {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.trademark {
+    font-family: "Jost", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .registerUs {
+        padding: 3.4% 7%;
+    }
+    
+    .registerUs h1 {
+        font-family: "Jost", sans-serif;
+        font-size: 3rem;
+        color: #383a49;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+    
+    .formList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .formLabel {
+        width: 40%;
+        margin-right: 4%;
+        font-family: "Jost", sans-serif;
+        font-size: 2rem;
+        color: #383a49;
+        font-weight: 450;
+    }
+    
+    .infoForm {
+        margin-bottom: 1rem;
+        width: 50%;
+        background-color: #E4E4E4;
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+    
+        font-family: "Jost", sans-serif;
+        font-size: 1.2rem;
+        color: #383a49;
+        font-weight: 450;
+    }
+    
+    
+    .checkBoxForm input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    .checkBoxForm {
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        font-size: 25px;
+        user-select: none;
+        margin-top: 2rem;
+    
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    
+        font-family: "Jost", sans-serif;
+        font-size: 1.2rem;
+        color: #383a49;
+        font-weight: 600;
+    }
+    
+    .checkMarkForm {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 1.3em;
+        width: 1.3em;
+        background-color: #E4E4E4;
+        border-radius: 2px;
+        box-shadow: 3px 3px grey;
+    }
+    
+    .checkBoxForm input:checked~.checkMarkForm {
+        background-color: #4ECB71;
+    }
+    
+    .checkMarkForm:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    .checkBoxForm input:checked~.checkMarkForm:after {
+        display: block;
+    }
+    
+    .checkBoxForm .checkMarkForm:after {
+        left: 0.45em;
+        top: 0.25em;
+        width: 0.25em;
+        height: 0.5em;
+        border: solid white;
+        border-width: 0 0.15em 0.15em 0;
+        transform: rotate(45deg);
+    }
+    
+    .buttonsList{
+        margin-top: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 30%;
+        margin-bottom: 7.5%;
+    }
+    
+    .resetButton, .regButton{
+        border: none;
+        padding: 10% 55%;
+        border-radius: 20px;
+        cursor: pointer;
+    
+        font-family: "Jost", sans-serif;
+        font-size: 1rem;
+        color: #383a49;
+        font-weight: 600;
+    }
+    
+    .resetButton{
+        background-color: #D9D9D9;
+    }
+    
+    .regButton{
+        background-color: #FFD058;
+    }
+}
